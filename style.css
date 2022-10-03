@@ -1,5 +1,9 @@
-/* color: #ff0266;    red
-    color: #03dac6; blue*/
+/*  
+    bg color:#1e1f26 black
+    color: #ff0266;    red
+    color: #03dac6; blue
+   line color: #4E6EE2
+    */
 * {
     margin: 0;
     padding: 0;
@@ -105,13 +109,13 @@ body {
 
 .bnavbar-toggle .line.top {
     stroke-dasharray: 40 139;
-    transform: translateY(3px);
+    /* transform: translateY(3px); */
 }
 
 .bnavbar-toggle .line.bottom {
     stroke-dasharray: 20 180;
     stroke-dashoffset: -20px;
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
 }
 
 .bnavbar-toggle.active {
@@ -208,3 +212,44 @@ body {
     border-radius: 50%;
     z-index: 1;
 }
+
+.btn {
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: #03dac6;
+    color: #fff;
+    border: solid 1px #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 200px;
+    margin: 10px;
+    outline: none;
+
+}
+
+.btn:hover {
+    background-color: #ff0266;
+    box-shadow: 0 0 30px#ff0266;
+    color: #272727;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+    transition-property: background-color, box-shadow, color;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+}
+
+.icon {
+    color: #03dac6;
+    font-size: larger;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* bg color:#1e1f26 black
+    color: #ff0266;    red
+    color: #03dac6; blue
+   line color: #4E6EE2 */
